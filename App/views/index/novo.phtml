@@ -1,0 +1,12 @@
+<?php if(isset($this->view->sucesso)): ?>
+<div class="notification"><p>Dados inseridos com sucesso!</p></div>
+<?php endif; ?>
+
+<h3>Inserir novo artigo</h3>
+<form method="post">
+    <label>Nome: <input type="text" name="nome" id="nome"/></label>
+    <label>Descrição: <input type="text" name="descricao" id="descricao"/></label>
+    <input type="submit" value="submit" id="submit"/>
+</form>
+
+<a href="/artigos">Voltar</a>

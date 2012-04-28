@@ -1,0 +1,343 @@
+/*
+    RESET
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: Arial, Helvetica, sans-serif; vertical-align: baseline}
+:focus { outline: 0}
+ol, ul { list-style: none}
+strong { font-weight: bold;}
+
+/*
+    CSS PADRÃƒO/GERAL
+*/
+
+a, button, input.submit {
+    cursor: pointer;
+    cursor: hand;
+}
+
+a, h1, h2, h3, p, span, div, li, td {
+    font-family: 'Ubuntu';
+}
+
+body {
+    background: #FFF;
+}
+
+#geral {
+    width: 100%;
+    margin: 0 auto;
+    display: table;
+    height: 100%;
+}
+
+#topo {
+    width: 100%;
+    background: #ee3224;
+    margin: 0 auto;
+}
+
+#topo h1 {
+    display: block;
+    font-size: 30px;
+    padding: 20px 10px;
+    color: #FFF;
+	text-shadow: 0px 1px 0 #444;
+}
+
+#topo ul {
+    background: #a91f15;
+    padding: 8px 16px;
+}
+
+#topo ul li {
+    display: inline;
+    padding: 0;
+    margin-left: -4px;
+}
+
+#topo ul li a {
+    font-size: 12px;
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 18px;
+    position: relative;
+    
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#topo ul li a:hover {
+    background: #c54b42;
+}
+
+#logo-impressao {display: none;}
+
+#conteudo {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#conteudo h2 {
+    font-size: 30px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+#conteudo h3 {
+    font-size: 22px;
+    color: #DF5353;
+    margin-bottom: 10px;
+}
+
+#conteudo .error-form {
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    background: #EEE;
+    border: 1px solid #DFDFDF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#conteudo .error-form li {
+    color: #444;
+    padding: 2px 0 2px 10px;
+    border-bottom: 1px solid #DFDFDF;
+    background: url(../images/arrow.gif) left center no-repeat;
+}
+
+table.grid {
+    width: 100%;
+    margin-left: -5px;
+    border: 1px solid #888;
+}
+
+.even {background: #EEE;}
+
+table.grid thead {
+    font-weight: bold;
+    border: 1px solid #888;
+}
+
+table.grid thead tr td {
+    background: #888;
+    padding: 5px 2px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-right: 1px solid #888;
+    color: #FFF;
+}
+
+table.grid thead tr td a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+table.grid tbody tr td {
+    color: #333;
+    padding: 5px 4px;
+    text-align: center;
+    border: 0;
+    border-top: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid transparent;
+}
+
+table.grid tbody tr td a {
+    color: #FFF;
+    font-size: 12px;
+    background: #ee3224;
+    text-decoration: none;
+    padding: 2px 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+table.grid tbody tr td a.active {
+    background: green;
+}
+
+table.grid tbody tr td span {
+    color: #FFF;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+table.grid tbody tr td span.active {
+    color: green;
+    font-weight: bold;
+}
+
+table.grid tbody tr td span.inactive {
+    color: #EF8686;
+    font-style: italic;
+}
+
+table.grid tbody tr td img {
+    position: relative;
+    top: 3px;
+}
+
+table.grid tbody tr.cor1 {
+    background: #DFC0A7;
+}
+
+table.grid tbody tr.cor2 {
+    background: #EFE4D1;
+}
+
+table.grid tr td.alignleft {
+    text-align: left!important;
+}
+
+.paginacao {
+    text-align: center;
+    padding: 5px 3px;
+    color: #888;
+    margin: 0 auto;
+}
+
+.paginacao span.atual {
+    color: #444;
+}
+
+.paginacao a {
+    color: #632E4A;
+    padding: 2px 4px;
+}
+
+.paginacao a:hover {
+    color: #7F512F;
+}
+
+form {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+form label {
+    text-align: right;
+    color: #003300;
+    font-size: 16px;
+}
+
+form div.form-linha {
+    display: block;
+    margin-bottom: 10px;
+    min-height: 30px;
+    width: 100%;
+}
+
+form div.form-linha label {
+    width: 150px;
+    display: block;
+    float: left;
+    text-align: right;
+    padding: 8px 5px 2px 5px;
+    color: #003300;
+    font-size: 16px;
+}
+
+form div.form-linha div.elemento {
+    width: 400px;
+    display: block;
+    float: left;
+    padding: 2px;
+}
+
+form input,
+form textarea {
+    border: 1px solid #CCC;
+    background: #EEE;
+    padding: 4px;
+}
+
+form div.botao {
+    display: block;
+    margin-bottom: 10px;
+    min-height: 30px;
+    width: 100%;
+}
+
+#tabela {width: 700px;}
+
+form div.botao input.botao {
+    float: right;
+    margin-right: 137px;
+    padding: 5px 0 5px 0;;
+    border: 0;
+    background: #632E4A;
+    color: #FFF;
+    padding: 3px 6px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+form div.outras-acoes {
+    text-align: right;
+    margin-right: 137px;
+}
+
+form div.outras-acoes a {
+    color: #666;
+    padding-right: 15px;
+    background: url(../images/arrow2.gif) right center no-repeat;
+}
+
+#rodape {
+    background: #FFF;
+    color: #666;
+    float:none;
+    height:40px;
+    padding:0;
+    position:relative;
+    width:100%;
+    font-size: 12px;
+}
+
+#rodape-info {
+    left:50%;
+    margin:0 0 0 -495px;
+    padding:13px 4px 4px 4px;
+    position:relative;
+    width:990px;
+    text-align: center;
+}
+
+/*
+    ESPECIFICO: LOGIN
+*/
+
+form#login {
+    width: 500px;
+ 
+}
+
+form#login div.form-linha div.elemento,
+form#usuario div.form-linha div.elemento {
+    width: 330px!important;
+}
+
+form#login div.form-linha label {
+    font-size: 12px;
+}
+
+form#login div.botao input.submit,
+form#usuario div.botao input.submit {
+    margin-right: 160px;
+}
+
+.align-left {
+    text-align: left!important;
+}
+
+.clearfix { clear:both}
+
+#listagem-produtos {float: left;margin-right: 30px;}
+#carrinho {float:left; width: 230px;}
+#carrinho-content {border: 1px solid red;padding: 5px;}

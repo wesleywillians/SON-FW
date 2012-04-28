@@ -1,0 +1,13 @@
+<?php if(isset($this->view->sucesso)): ?>
+<div class="notification"><p>Dados alterados com sucesso!</p></div>
+<?php endif; ?>
+<h3>Editar artigo</h3>
+<form method="post">
+    <input type="hidden" name="id" value="<?=$this->view->artigo['id']?>" />
+    <label>Nome: <input type="text" name="nome" id="nome" value="<?=$this->view->artigo['nome']?>"/></label>
+    <label>Descrição: <input type="text" name="descricao" id="descricao" value="<?=$this->view->artigo['descricao']?>"/></label>
+    <input type="submit" value="submit" id="submit"/>
+</form>
+
+<a href="/artigos">Voltar</a>
+

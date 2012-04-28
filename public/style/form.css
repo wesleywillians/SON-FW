@@ -1,0 +1,379 @@
+form.zend_form {
+	margin: 0 auto;
+}
+
+form.zend_form-70 {
+	width: 70%;
+}
+
+form.zend_form dt,
+form.zend_form dd {
+	width: 20%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+form.zend_form dd {
+	width: 75%;
+}
+
+/*
+form label {float: left;position: relative;margin: 10px 10px 0 0;}
+form fieldset input {display: block;border: 1px solid #cacaca;height: 16px;padding: 3px 5px;}
+form  .input-mi,form  .input-p,form  .input-m,form  .input-g {width: 30px;border: 1px solid #cacaca;height: 17px;font: 12px Verdana, Arial, Verdana, sans-serif;}
+form  .input-p { width: 70px; }
+form  .input-m { width: 150px; }
+form  .input-mg { width: 230px; }
+form  .input-g {width: 320px;}
+
+.bot.botdir {float: right;}
+.bot.botesq {float: left;	}
+
+input[type=submit],input[type=button] {background-color : #FFFFFF;cursor : pointer;border: 1px solid #cfd1cb;padding: 0px; height: 25px;}
+input[type=checkbox] {width: 15px;height: 15px;display: inline;	}
+input[type=hidden] {display: none;}
+
+/* Zend Form Styling */
+/*
+form {width:550px; margin:0 auto;}
+
+.zend_form fieldset {width:660px;padding:0;border: 0;margin-top: -15px; margin-bottom: 15px;}
+.zend_form fieldset legend {font: bold 12px Verdana, Arial, sans-serif; color: #505b79;padding: 0px;}
+.zend_form dt{clear:both;float:left;padding: 0px;}
+.zend_form dt label {width:100px;text-align:right;}
+.zend_form dd{padding:0;float:left;width:auto;margin:5px 2px 5px 0;}
+.zend_form p{padding:0;margin:0;}
+.zend_form input, .zend_form textarea{margin:0 0 2px 0;padding:0 0 0px;}
+.zend_form textarea {height: 100px;border: 1px solid #cfd1cb;width: 320px;}
+form  .textarea-m {width: 420px}
+
+.required:after{content:' *';color:red;}
+.optional:before{content:''}
+
+form input, form textarea { background: #E8E8E8 url(../images/input.bg.png) center left repeat-x; border:1px solid #E1E1E1!important; padding:5px 6px!important; color:#777;}
+
+form textarea { background: #FFF url(../images/textarea.bg.png) TOP left repeat-x; }
+
+form input:focus, form textarea:focus {border-color: #11DAF4!important;}
+
+button.botao-azul-p, button.botao-cinza-p { width:90px; height:31px; background: transparent url(../images/button.bg.png) center center no-repeat; border:0!important; padding:0!important; color:#FFF;}
+
+button.botao-cinza-p { background: transparent url(../images/button.cinza.bg.png) center center no-repeat;}
+
+button.botao-azul-g { width:115px; height:41px; background: transparent url(../images/button.bg.g.png) center center no-repeat; border:0!important; padding:0!important; color:#FFF; font-size: 20px;}
+
+#filter-search-box form input, #filter-search-box form textarea {border:0px!important;}
+
+.zend_form dd ul.errors
+{
+	width: 100%;
+}
+
+.zend_form dd ul.errors li
+{
+	width: 100%;
+	display:block;
+	padding:2px 5px 2px 12px;
+	color:#DB3F3F;
+	background: transparent url(../images/arrow_line.png) center left no-repeat;
+	word-wrap: break-word;
+}
+
+#submit-element{ width:100%; }
+#submit-element button { float:right; }
+
+form.login-header
+{
+	width:240px;
+}
+
+form.register,
+form.login
+{
+	width: 460px;
+	height:100%;
+	overflow:hidden;
+	display:block;
+	margin:0 auto;
+}
+
+form.login
+{
+	width: 400px;
+}
+
+form.register button
+{
+	margin-right:20px;
+}
+
+form.login button
+{
+	margin-right:45px;
+}
+
+#link_recuperar_senha-element
+{
+	width:100%;
+	text-align: right;
+	border-top:1px solid #EEE;
+	padding:10px 0;
+	background:#F1F1F1;
+}
+
+#link_recuperar_senha-element a
+{
+	color:#10707F;
+	padding:0 5px;
+	margin:0;
+}
+
+#link_recuperar_senha-element a:hover
+{
+	text-decoration: underline;
+}
+
+#link_recuperar_senha-element a.cadastro
+{
+	/*border-left:1px solid #DDD;*/
+}
+/*
+#link_recuperar_senha-element a.forgot-password
+{
+	margin:0;
+}
+
+#proposta
+{
+	margin:0 auto;
+}
+
+#ementa-label,
+#ementa-label label,
+#observacoes-label,
+#observacoes-label label
+{
+	width:100%;
+	text-align: left;
+
+}
+
+#proposta textarea.textarea-m
+{
+	width:540px;
+}
+
+#proposta #ementa
+{
+	height:400px;
+}
+
+#proposta #descricao,
+#proposta #pre_requisitos
+{
+	width:420px;
+	height:150px;
+}
+
+#proposta #pre_requisitos
+{
+	height:80px;
+}
+
+#proposta #valor-label
+{
+	width:60px;
+}
+
+#proposta #valor-label,
+#proposta #valor-element,
+#proposta #horas-label,
+#proposta #horas-element,
+#proposta #dias-label,
+#proposta #dias-element
+{
+	clear: right;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position:relative;
+	top:0;
+}
+
+#proposta #valor-element,
+#proposta #horas-element,
+#proposta #dias-element
+{
+	top:-5px;
+}
+
+#proposta #horas-label,
+#proposta #dias-label
+{
+	margin-left:10px;
+}
+
+#proposta #valor-label label,
+#proposta #horas-label label,
+#proposta #dias-label label
+{
+	text-align: left;
+}
+
+#proposta #titulo_calendario
+{
+	clear: both;
+}
+
+#proposta button.botao-add-calendario { font-size: 12px; width:230px;  height:33px; background: transparent url(../images/bg_button_add_calendario.png) center center no-repeat; border:0!important; padding:0!important; color:#444; text-shadow: 1px 1px #FFF;}
+
+#proposta button.botao-add-calendario:hover { background: transparent url(../images/bg_button_add_calendario.hover.png) center center no-repeat;}
+
+#titulo_calendario-element
+{
+	margin-bottom:-30px;
+}
+
+#proposta h3
+{
+	margin:0;
+	padding:0;
+}
+
+#calendarios-element
+{
+	width:100%;
+}
+
+#calendarios_elementos
+{
+	width: 100%;
+}
+
+#calendarios_elementos .calendario-proposta
+{
+	margin-bottom: 20px!important;
+	padding: 10px 0;
+	border-bottom: 1px solid #EEE;
+}
+
+#calendarios_elementos .calendario-proposta,
+#calendarios_elementos .calendario-proposta .calendario-dia
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin:4px 0 0 0!important;
+	display: block;
+}
+
+#calendarios_elementos .calendario-proposta h4
+{
+	width: 100%;
+	padding: 3px 0;
+	color: #777;
+}
+
+#calendarios_elementos .calendario-proposta .calendario-dia label,
+#calendarios_elementos .calendario-proposta .calendario-dia input
+{
+	float:left;
+}
+
+#calendarios_elementos .calendario-proposta .calendario-dia input
+{
+	margin: 0 3px;
+	top: 6px;
+}
+
+input.hora
+{
+	width: 40px;
+}
+
+input.data
+{
+	width: 80px;
+}
+
+#calendarios_elementos .calendario-proposta .calendario-dia input.data
+{
+	margin-right: 10px;
+}
+
+#proposta #adicionar_calendario-label
+{
+	display:none;
+}
+
+#proposta #adicionar_calendario-element
+{
+	display:none;
+}
+
+#proposta #calendarios-label
+{
+	display:none;
+}
+
+#form-votacao-proposta,
+#form-votacao-calendario
+{
+	width:100%;
+}
+
+#form-votacao-calendario span.votando
+{
+	background: transparent url(../images/ajax-loader.gif) center center no-repeat;
+	padding: 2px 6px;
+}
+
+#form-votacao-calendario span.voto-ok,
+#form-votacao-calendario span.voto-erro,
+span.proposta-votada
+{
+	background: green;
+    color: #FFFFFF;
+    padding: 1px 6px;
+    font-weight:100;
+}
+
+#form-votacao-calendario span.voto-erro
+{
+	background: red;
+}
+
+span.proposta-votada
+{
+	background: #3862AA;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #31476D;
+    border-top-color:#90B7F9;
+    border-left-color:#90B7F9;
+    text-shadow: 1px 1px #0B2754;
+}
+
+#matricula_curso { font-size: 16px; width:230px;  height:36px; background: transparent url(../images/bg_button_matricula.png) center center no-repeat; border:0!important; color:#FFF; text-shadow: 1px 1px green; padding:10px 60px; margin:5px 0; }
+
+#matricula_curso:hover { background: transparent url(../images/bg_button_matricula.hover.png) center center no-repeat; }
+
+#search-box form { width:240px; }
+
+#profile label
+{
+	width: 140px;
+}
+
+#profile #curriculo-label
+{
+	width: 100%;
+}
+
+#profile #curriculo
+{
+	width: 100%;
+	height:400px;
+}

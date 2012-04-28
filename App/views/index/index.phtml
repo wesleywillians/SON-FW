@@ -1,0 +1,33 @@
+<h2>Artigos</h2>
+
+<a href="/artigo/novo" class="btn-large btn pull-right btn-primary" id="adicionar">Adicionar</a>
+<br />
+<br />
+<br />
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th width="155">Ação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($this->view->objetos as $registro): ?>
+            <tr>
+                <td><?= $registro['nome']; ?></td>
+                <td><?= $registro['descricao']; ?></td>
+                <td>
+                    <a class="btn btn-small" href="/artigo/edit/?id=<?=$registro['id'];?>">
+                        <span class="icon-pencil"></span> Editar
+                    </a>
+                    &nbsp;
+                    <a class="btn btn-small btn-danger" href="/artigo/delete/?id=<?=$registro['id'];?>">
+                        <span class="icon-white icon-trash"></span> Apagar
+                    </a>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

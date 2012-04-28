@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+       	<title>SON Framework</title>
+        <link type="text/css" href="/bootstrap/css/bootstrap.min.css" rel="StyleSheet" />
+        <link type="text/css" href="/style/form.css" rel="StyleSheet" />   
+    </head>
+    <body>
+
+        <section class="container">
+            <section id="dropdowns" class="row">
+                <div id="navbar-example" class="navbar navbar-static span12">
+                    <div class="navbar-inner">
+                        <div class="container" style="width: auto;">
+                            <a class="brand" href="#">Sistema de Gerenciamento de artigos</a>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+            <section id="content" class="row">
+                <section class="span12">
+                    <?=$this->content(); ?>
+                </section>
+            </section>
+        </section>
+        
+        <script type="text/javascript">
+            var BASEURL = "/";
+        </script>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="/bootstrap/js/bootstrap-dropdown.js"></script>
+
+    </body>
+</html>

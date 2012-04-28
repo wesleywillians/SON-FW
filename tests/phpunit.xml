@@ -1,0 +1,27 @@
+<phpunit bootstrap="./App/Init.php" colors="true">
+    
+    <testsuite name="App">
+        <directory>./App</directory>
+    </testsuite>
+    
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../App</directory>
+            <directory suffix=".php">../vendor/SON</directory>
+            <exclude>
+                <directory suffix=".phtml">../App/views</directory>
+                <file>../App/Init.php</file>
+            </exclude>
+        </whitelist>
+    </filter>
+    
+    <logging>
+        <log type="coverage-html" 
+        target="./log/report" 
+        chartset="UTF-8" yui="true" hightlight="true" 
+        lowUpperBound="35" hightLowerBound="70" />
+        
+        <log type="testdox-html" target="./log/testdox.html" />
+    </logging>
+    
+</phpunit>
